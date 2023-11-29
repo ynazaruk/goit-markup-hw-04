@@ -353,18 +353,8 @@ button:focus {
   overflow: hidden;
 }
 
-.portfolio-img:hover .portfolio-overlay {
+.portfolio-img:hover .portfolio-item-overlay {
   transform: translateY(0);
-}
-.portfolio-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #4d5ae5;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .portfolio-item-overlay {
@@ -376,6 +366,14 @@ button:focus {
   padding-right: 32px;
   padding-top: 40px;
   padding-bottom: 164px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #4d5ae5;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .portfolio-item-container {
   width: 360px;
@@ -409,6 +407,11 @@ button:focus {
 
 .page-footer-container {
   display: flex;
+  align-items: baseline;
+}
+
+.slogan-footer {
+  margin-right: 120px;
 }
 
 .logo-footer {
@@ -430,14 +433,12 @@ button:focus {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 269px;
 }
 .description-footer {
   width: 264px;
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-right: 120px;
 }
 
 .social-media {
@@ -445,17 +446,18 @@ button:focus {
 }
 
 .social-list-title-footer {
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
 .social-list-footer {
   display: flex;
-  justify-content: space-between;
-  margin-top: 16px;
+
+  gap: 16px;
 }
 
 .social-list-link-footer {
@@ -465,12 +467,14 @@ button:focus {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+
   justify-content: center;
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-.social-list-link-footer:hover {
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
   background-color: #31d0aa;
 }
 
