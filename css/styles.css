@@ -89,22 +89,20 @@ body {
 
 .main-link {
   position: relative;
+  color: #404bbf;
 }
 
 .main-link::after {
   display: block;
   content: "";
+  position: absolute;
   width: 48px;
   height: 4px;
   border-radius: 2px;
-  padding-bottom: -1px;
-  position: absolute;
-  transform: translateY(20px);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-
-.main-link:active::after {
+  bottom: -1px;
   background-color: #404bbf;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .menu-contact {
@@ -362,7 +360,7 @@ button:focus {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 40px 32px;
+  padding: 40px 32px 164px 32px;
   position: absolute;
   top: 0;
   left: 0;
