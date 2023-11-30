@@ -30,7 +30,8 @@ body {
 .link {
   text-decoration: none;
 }
-/*HEADER*/
+/*------------------HEADER---------------------------*/
+
 .page-header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -127,13 +128,16 @@ body {
   color: #404bbf;
 }
 
-/*HERO*/
+/*---------------------HEADER-----------------------*/
+
+/*----------------------HERO------------------------*/
 
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 .hero {
+  margin: 0 auto;
   max-width: 1440px;
   background-color: #2e2f42;
   background-image: linear-gradient(
@@ -183,7 +187,9 @@ button:focus {
   background-color: #404bbf;
 }
 
-/*OUR BENEFITS*/
+/*------------------------HERO-----------------------*/
+
+/*----------------------OUR BENEFITS-----------------*/
 
 .visually-hidden {
   position: absolute;
@@ -240,7 +246,11 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/*OUR TEAM*/
+
+/*----------------------OUR BENEFITS-----------------*/
+
+/*-----------------------OUR TEAM-------------------*/
+
 .team {
   background-color: #f4f4fd;
 }
@@ -318,7 +328,7 @@ button:focus {
   stroke: none;
 }
 
-/*--------------------OUR PORTFOLIO----------------*/
+/*-----------------------OUR TEAM-------------------*/
 
 /*--------------------OUR PORTFOLIO----------------*/
 .portfolio-title {
@@ -351,7 +361,7 @@ button:focus {
   overflow: hidden;
 }
 
-.portfolio-img:hover .portfolio-item-overlay {
+.portfolio-list-item:hover .portfolio-item-overlay {
   transform: translateY(0);
 }
 
@@ -393,7 +403,7 @@ button:focus {
   letter-spacing: 0.02em;
 }
 
-/*FOOTER*/
+/*-----------------------FOOTER---------------------*/
 
 .page-footer {
   background-color: #2e2f42;
